@@ -1,0 +1,2 @@
+python-memcached
+boto==2.2.2
