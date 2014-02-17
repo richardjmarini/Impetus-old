@@ -350,8 +350,8 @@ def parseArgs(argv):
 
    [ optParser.add_option(opt) for opt in [
       make_option('-f', '--foreground', action='store_true', dest= 'foreground', default= False, help= 'run in foreground'),
-      make_option('-q', '--queue', default= 'ec2-184-72-140-129.compute-1.amazonaws.com:50001:impetus', help= 'queue ip:port:key'),
-      make_option('-d', '--dfs', default= 'ec2-184-72-140-129.compute-1.amazonaws.com:50002:impetus', help= 'dfs ip:port:key'),
+      make_option('-q', '--queue', default= 'localhost:50001:impetus', help= 'queue ip:port:key'),
+      make_option('-d', '--dfs', default= 'localhost:50002:impetus', help= 'dfs ip:port:key'),
       make_option('-s', '--s3', default= None, help= '<accessKey>:<secretKey>:<bucket> for s3 transport'),
       make_option('-p', '--pidDir', default= path.join(getcwd(), '../pid'), help= 'path to pid directory'),
       make_option('-o', '--logDir', default= path.join(getcwd(), '../log'), help= 'path to log directory'),
