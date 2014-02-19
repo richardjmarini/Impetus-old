@@ -1,7 +1,7 @@
 Impetus1
 ========
 
-Auto-scaling Asychronous Distributed Processing Framework and Distributed Crawler
+Auto-scaling Asychronous Distributed Processing Framework for Distributed Crawler
 
 ./queue.py start
 
