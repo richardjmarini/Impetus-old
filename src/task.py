@@ -56,7 +56,7 @@ class Task(object):
       SyncManager.register('setFileContents')
       SyncManager.register('deleteFile')
 
-      self.qeue= SyncManager(address= (qHost, int(qPort)), authkey= qKey)
+      self.queue= SyncManager(address= (qHost, int(qPort)), authkey= qKey)
       self.queue.connect()
 
       self.pipeline= self.queue.getPipeline()
@@ -183,7 +183,7 @@ class Task(object):
       )
          
       self.store.update([(processId, storeData)])
-      self.ppeline.put(processId)
+      self.pipeline.put(processId)
 
       with self.lock:
          self.subTasks.update([(subTaskId, time())])
